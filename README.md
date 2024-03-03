@@ -1,3 +1,9 @@
-# Data Structures and Algorithms
+# Data Structures and Algorithms Tasks
 
-This repository contains all the Data Structures and Algorithms tasks I accomplished as a Computer Science student while taking classes at Marie Curie-Skłodowska University. Each and every one of the tasks presented has passed tests by the algorithm checker.
+## Overview
+
+This repository contains a collection of Data Structures and Algorithms tasks completed during my time as a Computer Science student at Marie Curie-Skłodowska University. Each task presented here has undergone rigorous testing by an algorithm checker to ensure its correctness and efficiency.
+
+## Purpose
+
+The primary objective of this repository is to showcase my understanding and proficiency in implementing various data structures and algorithms. These tasks cover a wide range of concepts, including sorting algorithms, graph algorithms, tree structures, dynamic programming, and more.
