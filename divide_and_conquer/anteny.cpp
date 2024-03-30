@@ -29,22 +29,18 @@ double findHill(int y, int start_x, int end_x){
     int mid_x = start_x + ((end_x - start_x)/2);
     double maxi = findMax(y, mid_x, index_y);
 
-    cout << maxi << ' ' << index_y << ' ' << mid_x << '\n';
-    cout << P(index_y, mid_x) << '\n';
-
     if(mid_x == start_x || mid_x == end_x){
         return P(index_y, mid_x);
     }
 
-    if (mid_x < end_x && P(index_y, mid_x - 1) > maxi) { //&& P(index_y, mid_x - 1) > P(index_y, mid_x + 1)
+    if (P(index_y, mid_x - 1) > maxi) { 
         return findHill(y, start_x, mid_x);
-    }else if (mid_x > start_x && P(index_y, mid_x + 1) > maxi) {  //&& P(index_y, mid_x + 1) > P(index_y, mid_x - 1)
+    }else if (P(index_y, mid_x + 1) > maxi) {
         return findHill(y, mid_x, end_x);
     }
 
     return P(index_y, mid_x);
 }
-
 int main(){
 
     std::ios_base::sync_with_stdio(false);
